@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import img from "../../../public/vite.svg"
 
 export default function Card(params) {
   const [pokemon, setPokemon] = useState("");
@@ -39,6 +40,7 @@ export default function Card(params) {
     >
       <header>
         <h2>{pokemon.name}</h2>
+        <img src={img} alt="img" />
       </header>
     </section>
   );
